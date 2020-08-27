@@ -48,11 +48,10 @@ multipsum <- function(x,n){
 multipsum(3,100)
 
 #====gapminder연습====
-install.packages("gapminder")
+#install.packages("gapminder")
 #install.packages("dplyr")
 library(gapminder)
 library(dplyr)
-head(gapminder)
 table(gapminder$country)
 gapminder[gapminder$country == "Korea, Rep." & gapminder$year > 1990, c("lifeExp", "pop")]
 gapminder[gapminder$country == "Korea, Dem. Rep." & gapminder$year > 1990, c("lifeExp", "pop")]
