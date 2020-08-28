@@ -544,8 +544,10 @@ oneway.test(mydata~group, var=T)
 # 문제 6.
 x<-c(15,10,13,7,9,8,21,9,14,8) 
 y<-c(15,14,12,8,14,7,16,10,15,12) 
-out=lm(y~x)
-summary(out)
+shapiro.test(x) 
+shapiro.test(y) 
+
+t.test(x,y)
 
 # 회귀식 : Y=6.359+ 0.52x
 
